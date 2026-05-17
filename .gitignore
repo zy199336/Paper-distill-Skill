@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs and temporary files
+data/logs/*
+!data/logs/.gitkeep
+*.tmp
+*.bak
+
+# User-provided papers should not be committed
+input_papers/**/*.pdf
+
+# Generated extraction files can be large and corpus-specific
+data/extracts/**/*.md
+
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
