@@ -1,13 +1,13 @@
 ---
 name: paper-skill-builder
-description: Build and install two corpus-derived academic writing skills, writing-paper-outline and writing-paper, from a user-specified folder containing academic paper PDFs. Use when the user says their reference papers are in a folder and asks Codex to create paper skills, build writing-paper-outline/writing-paper skills, or run the paper-skill-builder workflow. Prefer a focused set of highly relevant, high-quality papers rather than a large loose corpus.
+description: Build and install two corpus-derived academic writing skills, writing-paper-outline and writing-paper, from a user-specified folder containing academic paper PDFs. Use when the user says their reference papers are in a folder and asks Codex/Claude/OpenCode to create paper skills, build writing-paper-outline/writing-paper skills, or run the paper-skill-builder workflow. Prefer a focused set of highly relevant, high-quality papers rather than a large loose corpus.
 ---
 
 # Paper Skill Builder
 
 ## Default stance
 
-This is an orchestration skill. It should run the project scripts automatically and use Codex to perform the paper reading and rule extraction steps.
+This is an orchestration skill. It should run the project scripts automatically and use Codex/Claude/OpenCode to perform the paper reading and rule extraction steps.
 
 The user must provide the folder where the reference papers are stored. If the folder is missing, ask for it before running the workflow.
 
@@ -17,7 +17,7 @@ The final installed skills are:
 - `writing-paper-outline`
 - `writing-paper`
 
-After installation, tell the user to restart Codex so the new skills can be discovered.
+After installation, tell the user to restart Codex/Claude/OpenCode so the new skills can be discovered.
 
 ## Use when
 
@@ -75,7 +75,7 @@ Run these steps without asking the user to run scripts manually:
    python scripts/validate_extracts.py
    ```
 
-   If validation fails because Codex-generated extracts are incomplete, fix the missing sections and rerun validation.
+   If validation fails because model-generated extracts are incomplete, fix the missing sections and rerun validation.
 
 6. Run:
 
@@ -143,7 +143,7 @@ If an existing destination skill is not marked as builder-managed, the script sk
 Always end successful builds with:
 
 ```text
-Installed writing-paper-outline and writing-paper. Please restart Codex so the two newly installed skills can be discovered.
+Installed writing-paper-outline and writing-paper. Please restart Codex/Claude/OpenCode so the two newly installed skills can be discovered.
 ```
 
 After restart, the user can call:

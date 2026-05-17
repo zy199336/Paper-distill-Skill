@@ -46,7 +46,7 @@ def main() -> int:
     if failures:
         print("Some skills were not installed. Resolve existing unmarked destination folders or install manually.")
         return 1
-    print("Restart Codex after installation so the new skills are discovered.")
+    print("Restart Codex/Claude/OpenCode after installation so the new skills are discovered.")
     return 0
 
 
