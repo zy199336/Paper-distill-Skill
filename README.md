@@ -29,7 +29,8 @@
 input_papers/
 ```
 
-<p><strong><span style="color:red;">PDF 数量应精，不宜多。请选取和你想写文章最相关、质量最高的论文。建议控制在 30 篇以内，但这只是质量建议，不是硬性限制。</span></strong></p>
+<p><strong><span style="color:red;">PDF 数量应精，不宜多。请选取和你想写文章最相关、质量最高的论文,建议控制在 30 篇以内。</span></strong></p>
+`PDF 数量应精，不宜多。请选取和你想写文章最相关、质量最高的论文,建议控制在 30 篇以内。`
 
 也可以使用绝对路径。如果提供 `input_papers`，脚本会在需要时递归扫描其中的 PDF。
 
